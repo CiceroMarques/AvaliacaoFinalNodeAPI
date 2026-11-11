@@ -12,7 +12,7 @@ class ServiceAtendimento {
         if (!id || isNaN(id)) {
             throw new Error("Favor informar somente números");
         }
-        return Atendimento.BuscarUm(id)
+        return Atendimento.findByPk(id)
     }
 
     BuscarConcluido() {
